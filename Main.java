@@ -14,6 +14,6 @@ class Rectangle implements Polygon {
 class Main {
   public static void main(String[] args) {
     Rectangle r1 = new Rectangle();
-    r1.getArea(5, 6);
+    r1.getArea(9, 5);
   }
 }
