@@ -5,13 +5,13 @@ pipeline {
         stage('Build') {
             steps {
                 // Compile Java code
-                sh 'javac Main.java'
+                bat 'javac Main.java'
             }
         }
         stage('Run') {
             steps {
                 // Run Java program
-                sh 'java LinearSearch 5 3 1 2 3 4 5'
+                bat 'java LinearSearch 5 3 1 2 3 4 5'
             }
         }
     }
