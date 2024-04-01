@@ -3,12 +3,14 @@ pipeline {
     
     stages {
         stage('Build') {
-            steps{
-                sh 'javac Main.java'
+            steps {
+                // Compile Java code
+                sh 'javac Main.java Rectangle.java'
             }
         }
         stage('Run') {
             steps {
+                // Run Java program
                 sh 'java Main'
             }
         }
