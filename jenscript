@@ -11,7 +11,7 @@ pipeline {
         stage('Run') {
             steps {
                 // Run Java program
-                bat 'java LinearSearch 5 3 1 2 3 4 5'
+                bat 'java Main 5 3 1 2 3 4 5'
             }
         }
     }
